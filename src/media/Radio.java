@@ -32,6 +32,19 @@ public class Radio {
         this.band = band;
     }
     
+    public Radio() {
+        this.fmFrequency = 91.8;
+        this.amFrequency = 600;
+        this.band = 'F';
+    }
     
+    public void printAttributes() {
+        
+        System.out.println("FM Frequency is: " + fmFrequency);
+        System.out.println("AM Frequency is: " + amFrequency);
+        System.out.println("Band is: " + band);
+        System.out.println();
+        
+    }
     
 }

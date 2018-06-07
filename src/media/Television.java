@@ -36,6 +36,25 @@ public class Television {
         this.turnOn = turnOn;
     }
     
+    public Television() {
+        this.volume = 0;
+        this.currentProgram = 1;
+        this.turnOn = false;
+    }
     
+    public Television(int volume, int currentProgram, boolean turnOn) {
+        this.volume = volume;
+        this.currentProgram = currentProgram;
+        this.turnOn = turnOn;
+    }
+    
+    public void printAttributes() {
+        
+        System.out.println("Current volume level is: " + volume);
+        System.out.println("Chosen channel: " + currentProgram);
+        System.out.println("Is TV turned on: " + turnOn);
+        System.out.println();
+        
+    }
     
 }
